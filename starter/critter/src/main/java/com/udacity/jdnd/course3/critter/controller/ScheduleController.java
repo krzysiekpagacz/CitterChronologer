@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.udacity.jdnd.course3.critter.dto.ScheduleDTO;
-import com.udacity.jdnd.course3.critter.model.Customer;
 import com.udacity.jdnd.course3.critter.model.Employee;
 import com.udacity.jdnd.course3.critter.model.Pet;
 import com.udacity.jdnd.course3.critter.model.Schedule;
@@ -35,9 +34,6 @@ public class ScheduleController {
 	
 	@Autowired
 	private EmployeeService employeeService;
-	
-	@Autowired
-	private CustomerService customerService;
 	
 	@Autowired
 	private PetService petService;

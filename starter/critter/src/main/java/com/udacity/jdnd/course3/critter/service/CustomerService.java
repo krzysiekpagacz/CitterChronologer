@@ -5,12 +5,13 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.udacity.jdnd.course3.critter.model.Customer;
-import com.udacity.jdnd.course3.critter.model.Pet;
 import com.udacity.jdnd.course3.critter.repository.CustomerRepository;
 
 @Service
+@Transactional
 public class CustomerService {
 	
 	@Autowired
